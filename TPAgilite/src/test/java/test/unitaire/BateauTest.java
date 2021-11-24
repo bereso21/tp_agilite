@@ -28,7 +28,7 @@ public class BateauTest
 	 */
 	@Before
 	public void setUp() {
-		
+		blackpearl = new Bateau("BlackPearl", 100);
 	}
 
 	/**
@@ -39,5 +39,11 @@ public class BateauTest
 	@After
 	public void tearDown() {
 		
+	}
+	
+	@org.junit.Test
+	public void testGetPrix() {
+		blackpearl.setPrix(200);
+		assertEquals(200, blackpearl.getPrix());
 	}
 }
